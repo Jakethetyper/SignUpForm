@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="graphics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div class="background">
+        <div class="logo">
+            <p class="regime">
+                Jacob's Regime
+            </p>
+            <img src="fighting-game.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <p>
+                This is a real service, join Jacob's 
+                regime <strong>NOW</strong> by committing your time to becoming a great coder, athlete, and chef.
+                <br> <br>
+                You know you want to.
+            </p>
+        </div>
+        <div class="bottom">
+            <button type="submit" form="user-form">Create Account</button>
+            <label for="signin">Already have an account?</label>
+            <a href="signin" class="signin">Sign In</a>
+        </div>
+    </div>
+    <div class="form">
+        <p class="header">
+            Let's Do This!
+        </p>
+        <form action="" method="get" id="user-form">
+            <div class="col1">
+                <label for="name">FIRST NAME</label>
+                <input type="text" name="first" minlength="1" required placeholder="Jacob">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" required placeholder="whatmynameisnotvalid@yahoo.com">
+                <label for="password">PASSWORD</label>
+                <input type="password" minlength="8" name="password" required placeholder="8 characters or more">
+            </div>
+            <div class="col2">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname" required placeholder="Jennings">
+                <label for="phonenumber">PHONE NUMBER</label>
+                <input type="number" name="number" required placeholder="555-777-2234">
+                <label for="password">CONFIRM PASSWORD</label>
+                <input type="password" minlength="8" name="password" required placeholder="8 characters or more">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
