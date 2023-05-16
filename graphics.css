@@ -9,14 +9,14 @@ body {
 }
 
 .background {
-    height: 92.5vh;
+    height: 100vh;
     background-image: url(background.avif);
     background-size: cover;
-    width: 40vw;
-    padding-top: 7.5vh;
+    width: max(40vw,640px);
 }
 
 .logo {
+    margin-top: 9.5vh;
     display: flex;
     height: 15vh;
     width: 100%;
@@ -90,10 +90,10 @@ a{
 
 .form {
     position: absolute;
-    height: 50vh;
-    width: 45vw;
+    height: max(50vh, 280px);
+    width: max(45vw, 320px);
     top: 27.5vh;
-    left: 30vw;
+    left: 27.5%;
     background-color: white;
     box-shadow: 3px 3px 10px 0px rgb(85, 16, 141);
 }
@@ -124,4 +124,7 @@ input:invalid {
 .header {
     margin: 10px;
     color: goldenrod;
+}
+label {
+    font-size: clamp(0.5rem, 4vh, 2rem);
 }
